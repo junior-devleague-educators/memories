@@ -1,0 +1,66 @@
+body {
+	background-color: blue;
+	width: 700px;
+	height: auto;
+
+#title {
+	background-color: pink;
+	height: auto;
+	width: auto;
+
+}
+
+#scoreTimer {
+	display:flex;
+}
+
+#score {
+	background-color: yellow;
+	flex-grow:1;
+}
+
+#timer {
+	background-color: red;
+	flex-grow:1;
+}
+
+#cardInterface {
+	background-color: orange;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+
+.cards {
+	background-color: green;
+	height: 200px;
+	width: 150px;
+	border-style: solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	
+}
+
+#restartBtn {
+	background-color: purple;
+    border: none;
+    color: white;
+    display:flex;
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+#buttonInterface {
+	background-color: lavender;
+	height: 50px;
+	width: auto;
+	display: flex;
+	justify-content: center;
+
+}
