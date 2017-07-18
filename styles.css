@@ -8,25 +8,18 @@ body {
 	height: auto;
 	margin:0 auto;
 
-
 }
-#title {
-	background-color: lavender;
-	height: auto;
-	width: auto;
-}
-	
 
-#scoreTimer {
+#scoreBar {
 	display:flex;
 }
 
-#score {
+#scoreHolder {
 	background-color: #b8a9c9;
 	flex-grow:1;
 }
 
-#timer {
+#timerHolder {
 	background-color: #622569; /* purple */
 	color: white;
 	flex-grow:1;

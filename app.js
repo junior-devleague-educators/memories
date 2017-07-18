@@ -10,19 +10,22 @@ cardArray[6]=document.getElementById("c7");
 cardArray[7]=document.getElementById("c8");
 var i = 0;
 var imgElement = document.getElementById("c1");
-function on() {
 
-	var timeleft = 60;
-	var downloadTimer = setInterval(function(){
-	  document.getElementById("progressBar").value = 60 - --timeleft;
-	  if(timeleft > 0){
-	  }
-	  else{
-	  	clearInterval(downloadTimer);
-	  	alert('Times UP!');
-	  }  
-		
-	},1000);
+function on(){
+ 
+ var time = 60;
+
+ var downloadTimer = setInterval(function() {
+ time--;
+ // Display the result in the element with id="demo"
+ document.getElementById("timer").innerHTML = time;
+
+ // If the count down is finished, write some text
+ if (time < 0) {
+   clearInterval(downloadTimer);
+   document.getElementById("timer").innerHTML = "EXPIRED";
+ }
+ }, 1000);
 }
 var x = document.getElementById("c1");
 console.log(x);
