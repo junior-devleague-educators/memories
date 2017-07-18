@@ -1,6 +1,75 @@
-#c1{
-	height: 200px;
-	width: 200px;
-	background-image: url("dog3.jpg");
-	background-size: cover;
+body {
+	background-color: #f0efef;
+}	
+
+#main {
+	text-align: center;
+	width: 750px;
+	height: auto;
+	margin:0 auto;
+
+
 }
+#title {
+	background-color: lavender;
+	height: auto;
+	width: auto;
+}
+	
+
+#scoreTimer {
+	display:flex;
+}
+
+#score {
+	background-color: #b8a9c9;
+	flex-grow:1;
+}
+
+#timer {
+	background-color: #622569; /* purple */
+	color: white;
+	flex-grow:1;
+}
+
+#cardInterface {
+	background-color: #D3D3D3 ; /* grey */
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+
+.cards {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(/assets/cardback.jpg);
+	height: 200px;
+	width: 150px;
+	border-style: solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	
+}
+
+#restartBtn {
+	background-color: purple;
+    border: none;
+    color: white;
+    display:flex;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+#buttonInterface {
+	background-color: lavender;
+	height: 50px;
+	width: auto;
+	display: flex;
+	justify-content: center;
+
