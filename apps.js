@@ -34,10 +34,13 @@ imgArray = shuffle(imgArray);
 console.log(imgArray);
 
 function on(card){
-	
 	if (clicks === 0 && time === 60){
 		countDown();
 		
+		var audio = document.getElementById("audio");
+   		audio.play();
+		
+		console.log("music?", audio);
 	}
 	if (clicks ===0){
 		choose(card);
@@ -122,3 +125,8 @@ function reset(){
 	console.log(imgArray);
 	}
 }
+
+// function music(){
+	
+//    }
+// }  
