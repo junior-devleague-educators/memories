@@ -26,7 +26,11 @@ function on(card){
 		countDown();
 		
 	}
+	if (clicks ===0){
 		choose(card);
+	}else {
+		choose(card);
+	}
 	//flip();
 } 
 
@@ -61,17 +65,12 @@ function choose(card){
     if (clicks === 0) {
         first = card;
 	    document.images[card].src = imgArray[card];
-	    console.log(document.images[card]);
-	    clicks ++;
-	    console.log(clicks, "card#", card);
-	    }
-	if (clicks ===1){
+	    clicks=1;
+	    }else if (clicks ===1){
     	console.log(clicks);
         clicks++;
         second = card;
-        console.log(clicks);
         document.images[card].src = imgArray[card];
-        console.log(card);
         match();
         }
     }
@@ -82,9 +81,10 @@ function match(){
             document.getElementById("score").innerHTML = score;
             clicks = 0;
         } else {
-            document.images[first].src = backcard;
+        	document.images[first].src = backcard;
             document.images[second].src = backcard;
             clicks = 0;
+
             return;
         }
     }
@@ -97,12 +97,13 @@ function match(){
 
 // }
 function reset(){
-	console.log("hi");
 	score = 0;
 	document.getElementById("score").innerHTML = score;
 	time = 60;
+	document.getElementById("timer").innerHTML = time;
 	clicks = 0;
-	console.log(score, time);
-	for (i; i<imgArray.length;i++)
+	for (i; i<imgArray.length;i++){
 	document.images[i].src = backcard;
+	console.log(i);
+	}
 }
