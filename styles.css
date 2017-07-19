@@ -35,19 +35,26 @@ body {
 	align-content: space-around;
 }
 
+img{
+	height:200px;
+	width: 150px;
+}
 
 .cards {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(/assets/cardback.jpg);
+	/*background-image: url(/assets/cardback.jpg);*/
 	height: 200px;
 	width: 150px;
 	border-style: solid;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	transition: transform 1s;
+}
 
-	
+.cards.flipped{
+	transform: rotate(180deg);
 }
 
 #restartBtn {
