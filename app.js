@@ -44,6 +44,7 @@ var x = document.getElementById("c1");
     if (!this.classList.contains('flipped') && cardArray.length < 2) {
       this.classList.toggle('flipped');
 
+
       cardArray.push(this);
 
       //if (cardArray.length === 2) {
@@ -93,3 +94,4 @@ function flip(card){
 	// }else{
 	// 	i = 0;
 	}
+
