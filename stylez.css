@@ -57,6 +57,19 @@ img{
 	transform: rotate(180deg);
 }
 
+.cards .front {
+  background: url('../images/cardback.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cards .back {
+  background: url('#');
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+}
+
 #restartBtn {
 	background-color: purple;
     border: none;

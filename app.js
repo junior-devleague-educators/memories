@@ -16,7 +16,7 @@ var i = 0;
 var imgElement = document.getElementById("c1");
 
 function on(){
- 
+ console.log("hi");
  var time = 60;
 
 //timer function
