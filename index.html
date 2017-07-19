@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Match Maker</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"
+  	<meta charset="UTF-8">
+  	<title>Match Maker</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	
-	<section class="container">
+	<div id= "main">
+		<title>Match Maker</title>
+		<h1>Match Maker</h1>	
+		<div id = "scoreBar">
+			<div id="scoreHolder">
+				<h2>Score: 
+					<p id="score">		
+					</p>
+				</h2>	
+			</div>
+				
+			<div id = "timerHolder">
+				<h2>Timer: 	
+					<p id="timer"></p>
+				</h2>
+			</div>
+		</div>
 
-  	<div class="card">
-  		<div class="front" id="c1"><img src="https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-odd-bods-1_grande.png?v=1474350874 height="400" width="200" alt="Card 1"></div>
+		<div id = "cardInterface">
+			<div class="cards" id="c1">
+				<h3>card1</h3>	
+			</div>
+			<div class="cards" id="c2">
+				<h3>card2</h3>		
+			</div>
+			<div class="cards" id="c3">
+				<h3>card3</h3>		
+			</div>
+			<div class="cards" id="c4">
+				<h3>card4</h3>		
+			</div>
+			<div class="cards" id="c5">
+				<h3>card5</h3>		
+			</div>
+			<div class="cards" id="c6">
+				<h3>card6</h3>		
+			</div>
+			<div class="cards" id="c7">
+				<h3>card7</h3>		
+			</div>
+			<div class="cards" id="c8">
+				<h3>card8</h3>		
+			</div>
+		</div>  
 
-  	  	<img src="https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-odd-bods-1_grande.png?v=1474350874 height="400" width="200"><br>	</br>
-
-      <div class="front"></div>
-    <div class="back"></div>
-  	</div>
-	</section>
-
-
-<script src= "app.js"></script>
-
-  </body>
+		<div id = "buttonInterface">
+			<button id = "restartBtn" onclick="on()">Restart</button>
+		</div>
+	</div>	
+	<script src = "app.js"></script>
+</body>
+>>>>>>> f4913dc73ea16ee9d04a5bc733872d65eecce841
 </html>

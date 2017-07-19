@@ -1,36 +1,70 @@
 body {
-  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
-  margin: 12px 0;
+
+	background-color: #f0efef;
+}	
+
+#main {
+	text-align: center;
+	width: 750px;
+	height: auto;
+	margin:0 auto;
+
 }
-.card-container {
-  cursor: pointer;
-  height: 150px;
-  perspective: 600;
-  position: relative;
-  width: 150px;
+
+#scoreBar {
+	display:flex;
 }
-.card {
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%;
+
+#scoreHolder {
+	background-color: #b8a9c9;
+	flex-grow:1;
 }
-.card:onClick {
-  transform: rotateY(180deg);
+
+#timerHolder {
+	background-color: #622569; /* purple */
+	color: white;
+	flex-grow:1;
 }
-.card .side {
-  backface-visibility: hidden;
-  border-radius: 6px;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
+
+#cardInterface {
+	background-color: #D3D3D3 ; /* grey */
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
 }
-.card .back {
-  background: #eaeaed;
-  color: #0087cc;
-  line-height: 150px;
-  text-align: center;
-  transform: rotateY(180deg);
+
+
+.cards {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(/assets/cardback.jpg);
+	height: 200px;
+	width: 150px;
+	border-style: solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	
 }
+
+#restartBtn {
+	background-color: purple;
+    border: none;
+    color: white;
+    display:flex;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+#buttonInterface {
+	background-color: lavender;
+	height: 50px;
+	width: auto;
+	display: flex;
+	justify-content: center;
+
+>>>>>>> f4913dc73ea16ee9d04a5bc733872d65eecce841
